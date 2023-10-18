@@ -1,0 +1,250 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: back;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+.header{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas: 
+    "search profile"
+    "welcome buttons";
+}
+
+.search-container{
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.search-icon{
+    grid-column: 1 / 2;
+    justify-self: end;
+}
+.search-input{
+    margin-right: 3px;
+}
+
+.profile-container{
+    grid-area: profile;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+}
+.notification-icon{
+    justify-self: end;
+    grid-column: 1 / 2;
+
+}
+.profile-img{
+    grid-column: 2 / 3;
+    width: 4rem;
+    border-radius: 50%;
+    justify-self: center;
+
+}
+.welcome-container{
+    grid-area: welcome;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.user-img{
+    width: 5rem;
+    border-radius: 50%;
+    justify-self: center;
+    grid-column: 1 / 2;
+}
+
+.welcome-msg{
+    grid-column: 2 / 3;
+}
+
+.greeting{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.user-id{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button-container{
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+button{
+    padding: 2px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: rgb(230, 230, 230);
+    background-color: rgb(71, 73, 73);
+
+}
+
+.sidebar{
+    background-color: rgb(71, 73, 73);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.dashboard-main{
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-one{
+    
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 5px;
+}
+.navbar-two{
+    
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+.main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    background-color:rgb(179, 179, 179);
+}
+
+.project-main{
+
+    grid-column: 1 / 2;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.4rem;
+    justify-content: space-evenly;
+}
+
+.project-item{
+    background-color: white;
+    border-radius: 5%;
+    padding: 0.8rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.heading{
+    grid-row: 1 / 2;
+}
+
+.text{
+    grid-row: 2 / 3;
+}
+
+.action-container{
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+}
+.action-icon{
+    height: 2rem;
+}
+
+.left-sidebar{
+    grid-column: 2 / 3;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebox-one {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding-left: 1rem;
+}
+
+.announcement-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+.sidebox-two{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding-left: 1rem;
+}
+
+.trending-cantainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 2%;
+    background-color: white;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon{
+    width: 1.5rem;
+    justify-self: end;
+}
+
+a{
+    text-decoration: none;
+}
